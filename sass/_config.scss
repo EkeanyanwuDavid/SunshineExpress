@@ -1,0 +1,13 @@
+$primary-color: rgb(185, 102, 7);
+$light-color: #f4f4f4;
+$red-color: #c72727;
+$dark-color: #333;
+$website-width: 1290px;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
